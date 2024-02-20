@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+<div class="header">
+    <img src="{{ url_for('static', filename='images/profilepic.png') }}" alt="Joel Plummer">
+    <div class="info">
+        <p class="name"> Joel Plummer</p>
+        <p>@joelp</p>
+        <p>Kingston, Jamaica</p>
+        <p>Joined {{date}}</p>
+    </div>
+</div>
+<div class="bio">
+    <p>   I am a student at the University of the West Indies Mona, pursuing a Bachelor of Science in Computer Science with a minor in Economics. 
+
+        Graduating in May, 2025. I'm passionate about working in the Computing industry to use skills gained from my college education and previous work experience in order to make a difference as a Software Engineer or Product Manager.
+        
+        I am currently working on acquiring skills and certifications along with further developing my portfolio of projects, gaining hands-on experience development websites and applications which can display the extent of my skill as a software engineer.
+        
+        At this time I am actively seeking internship opportunities in Software Engineering and/or Product Management that I can undertake simultaneously with completing my university studies. While I am open to moving abroad to facilitate this opportunity I would opt to undertake same in a remote or hybrid manner until the summer where I will be free from school.
+        
+        If you are interested in learning more about my skills and how I can help your company, please send me a LinkedIn message or email me at:
+        joeldplummer@gmail.com.
+    </p>
+</div>
+<div class="stats">
+    <p>7</p>
+    <p>100</p>
+    <p>250</p>
+</div>
+<div class="stats-labels">
+    <p>Posts</p>
+    <p>Following</p>
+    <p>Followers</p>
+</div>
+<div class=" buttons">
+    <button class="follow">Follow</button>
+
+{% endblock %}
